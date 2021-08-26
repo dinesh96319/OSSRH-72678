@@ -27,7 +27,7 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git://github.com/dinesh96319/Maven_TestPlugin.git</connection>
+        <connection>scm:git:git://github.com/dinesh96319/OSSRH-72678.git</connection>
         <developerConnection>scm:git:ssh://github.com/dinesh96319/OSSRH-72678.git</developerConnection>
         <url>https://github.com/dinesh96319/OSSRH-72678</url>
     </scm>

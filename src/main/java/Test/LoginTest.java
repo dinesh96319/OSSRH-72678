@@ -1,5 +1,6 @@
 package Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -13,7 +14,12 @@ import java.io.IOException;
 public class LoginTest {
     public static void main(String[] args) throws IOException {
 
-        System.setProperty("webdriver.Chrome.driver", "F:\\Practise Intellij\\driver\\drivers\\ChromeDriver\\chromedriver.exe");
+//        System.setProperty("webdriver.Chrome.driver", "F:\\Practise Intellij\\driver\\drivers\\ChromeDriver\\chromedriver.exe");
+//
+//        WebDriver driver = new ChromeDriver();
+
+
+        WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
 

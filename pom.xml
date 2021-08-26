@@ -6,11 +6,11 @@
 
     <groupId>io.github.DineshTester</groupId>
     <artifactId>Maven_TestPlugin</artifactId>
-    <version>1.1.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>Test Project for Push Maven Repo</name>
     <description>Test sample of my jar files pushing its components to the Central Repository</description>
-    <url>https://github.com/dinesh96319/Maven_TestPlugin</url>
+    <url>https://github.com/dinesh96319/OSSRH-72678</url>
 
     <licenses>
         <license>
@@ -20,7 +20,7 @@
     </licenses>
     <developers>
         <developer>
-            <name>Dinesh N</name>
+            <name>Dinesh Nehru</name>
             <email>dineshnsp96@gmail.com</email>
             <organization>com.github.dinesh96319</organization>
             <organizationUrl>https://github.com/dinesh96319/</organizationUrl>
@@ -28,8 +28,8 @@
     </developers>
     <scm>
         <connection>scm:git:git://github.com/dinesh96319/Maven_TestPlugin.git</connection>
-        <developerConnection>scm:git:ssh://github.com/dinesh96319/Maven_TestPlugin.git</developerConnection>
-        <url>https://github.com/dinesh96319/Maven_TestPlugin</url>
+        <developerConnection>scm:git:ssh://github.com/dinesh96319/OSSRH-72678.git</developerConnection>
+        <url>https://github.com/dinesh96319/OSSRH-72678</url>
     </scm>
 
     <distributionManagement>
@@ -42,6 +42,20 @@
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
     <properties>
